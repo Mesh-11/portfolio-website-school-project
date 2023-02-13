@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .gallery {
+        display: grid;
+        gap: 2rem;
+      }
+      @media screen and (min-width: 768px) {
+        .gallery {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      img {
+        border-radius: 30px;
+        width: 100%;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        color: black;
+        padding: 1.8%;
+        position: relative;
+        perspective: 800px;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 1.4rem;
+      }
+      .header nav {
+        display: flex;
+      }
+      .header nav a {
+        text-decoration: none;
+        color: black;
+        margin-right: 20px;
+        font-size: 1.6rem;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        z-index: 1;
+        transform-style: preserve-3d;
+      }
+      .header nav a:hover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: bisque;
+        transform: rotateX(90deg);
+        transform-origin: top;
+        transition: all 0.3s ease-in-out;
+        z-index: -1;
+      }
+      .header nav a:hover {
+        color: black;
+        background-color: bisque;
+        padding: 10px 15px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <a href="/">about</a>
+        <a href="work.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <div class="gallery">
+      <img
+        src="https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+        alt=""
+      />
+      <img
+        src="https://images.unsplash.com/photo-1612198526331-66fcc90d67da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+        alt=""
+      />
+      <img
+        src="https://images.unsplash.com/photo-1587395455908-e178101fcdcd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+        alt=""
+      />
+      <img
+        src="https://images.unsplash.com/photo-1608263153703-caa6b0fd7bc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1001&q=80"
+        alt=""
+      />
+      <img
+        src="https://images.unsplash.com/photo-1620915789294-c972b1b1af7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+        alt=""
+      />
+      <img
+        src="https://images.unsplash.com/photo-1612198526331-66fcc90d67da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+        alt=""
+      />
+    </div>
+  </body>
+</html>

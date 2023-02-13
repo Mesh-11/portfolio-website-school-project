@@ -1,0 +1,72 @@
+:root {
+    --ff-primary: sans-serif;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+.list {
+    list-style-type: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: black;
+    padding-top: 25vh;
+    padding-inline: 5rem;
+}
+
+
+
+/* form section */
+
+  
+  #contact-form {
+    background-color: black;
+    padding: 30px;
+    color: white;
+  }
+  
+  #contact-form h2 {
+    text-align: center;
+    color: white;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+  }
+  
+  button[type="submit"] {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgba(112, 88, 197, .9);
+    color: white;
+  }
+  
